@@ -4,11 +4,13 @@ import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.self.utils.PropertyUtils;
 import com.self.enums.ConfigProperties;
 import com.self.pages.AdminPage;
 import com.self.pages.LoginPage;
+import com.self.tests.BaseTest;
+import com.self.utils.PropertyUtils;
+
+
 
 public class AdminTest extends BaseTest {
 
