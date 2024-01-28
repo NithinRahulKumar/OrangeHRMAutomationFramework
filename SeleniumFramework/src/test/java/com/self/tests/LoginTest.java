@@ -12,7 +12,7 @@ import com.self.utils.PropertyUtils;
 
 public class LoginTest extends BaseTest {
 
-	@Test(priority = 1)
+	@Test()
 	public void login(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		String dashboardText = loginpage.enterUserName(PropertyUtils.getProperty(ConfigProperties.USERNAME))

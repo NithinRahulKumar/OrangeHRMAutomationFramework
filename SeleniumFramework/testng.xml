@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="2">
+<suite name="Suite" data-provider-thread-count="1">
   <listeners>
     <listener class-name="com.self.listeners.ListenerClass" />
     <listener class-name="com.self.listeners.MethodInterceptor" />
     <listener class-name="com.self.listeners.AnnotationTransformer" />
   </listeners>
-  <test thread-count="2" name="Test" parallel="classes">
+  <test thread-count="1" name="Test" parallel="classes">
     <classes>
       <class name="com.self.tests.BaseTest"/>
 	  <class name="com.self.tests.LoginTest"/>

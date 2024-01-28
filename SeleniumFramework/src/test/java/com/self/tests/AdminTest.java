@@ -7,14 +7,13 @@ import org.testng.annotations.Test;
 import com.self.enums.ConfigProperties;
 import com.self.pages.AdminPage;
 import com.self.pages.LoginPage;
-import com.self.tests.BaseTest;
 import com.self.utils.PropertyUtils;
 
 
 
 public class AdminTest extends BaseTest {
 
-	@Test(priority = 1)
+	@Test()
 	public void createsJobTitle(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -40,7 +39,7 @@ public class AdminTest extends BaseTest {
 
 	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void createsPayGrade(Map<String, String> data) {
 		
 		LoginPage loginpage = new LoginPage();
@@ -73,7 +72,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test(priority = 3)
+	@Test()
 	public void createsEmploymentStatus(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -98,7 +97,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test(priority = 4)
+	@Test()
 	public void createsJobCategories(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -122,7 +121,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test(priority = 5)
+	@Test()
 	public void updatesGeneralInformationData(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();

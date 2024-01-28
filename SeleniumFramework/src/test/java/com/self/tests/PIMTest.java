@@ -10,7 +10,7 @@ import com.self.utils.PropertyUtils;
 
 public class PIMTest extends BaseTest {
 	
-	@Test()
+	@Test
 	public void creationOfEmployee(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		PIMPage pimPage = new PIMPage();
