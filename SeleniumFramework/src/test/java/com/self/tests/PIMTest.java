@@ -2,6 +2,7 @@ package com.self.tests;
 
 import java.util.Map;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.self.enums.ConfigProperties;
 import com.self.pages.LoginPage;
@@ -18,7 +19,7 @@ public class PIMTest extends BaseTest {
 		loginpage.enterUserName(PropertyUtils.getProperty(ConfigProperties.USERNAME))
 		.enterPassword(PropertyUtils.getProperty(ConfigProperties.PASSWORD)).clickOnLogin();
 		
-		pimPage.clicksOnLeftMenuPIM().toClickOnAddEmployee().toEnterTextinFirstNameinAddEmployee(data.get("firstName"))
+		 boolean employeeCreationSuccessMessage = pimPage.clicksOnLeftMenuPIM().toClickOnAddEmployee().toEnterTextinFirstNameinAddEmployee(data.get("firstName"))
 		.toEnterinMiddleNameinAddEmployee(data.get("middleName"))
 		.toEnterTextinLastNameinAddEmployee(data.get("lastName"))
 		.toEnableLoginDetailsCheckboxinAddEmployee()
@@ -26,8 +27,10 @@ public class PIMTest extends BaseTest {
 		.toEnterPasswordinAddEmployee(data.get("password"))
 		.toEnterConfirmPasswordinAddEmployee(data.get("password"))
 		.toClickOnSaveButtonInAddEmployee()
-		.toCheckForSuccessfulSaveMessage();
+		.toCheckForSuccessfulSaveMessage().isDisplayed();
+		 Assert.assertTrue(employeeCreationSuccessMessage); 
 	}
+	
 	
 	@Test
 	public void deletionOfEmployeeFromEmployeeList(Map<String, String> data) {

@@ -28,7 +28,7 @@ public class BasePage {
 		element.sendKeys(Keys.CONTROL+"A");
 		element.sendKeys(Keys.DELETE);
 		element.sendKeys(inputText);
-		ExtentLogger.pass("Entered text in " + fieldName + " successfully", true);
+		ExtentLogger.pass("Entered text in " + fieldName + " text box successfully", true);
 	}
 
 	protected String pageTitle() {

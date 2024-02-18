@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite data-provider-thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.self.listeners.ListenerClass"/>
     <listener class-name="com.self.listeners.MethodInterceptor"/>
     <listener class-name="com.self.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" parallel="instances" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.self.tests.AdminTest">
+      <class name="com.self.tests.PIMTest">
         <methods>
           <include name="setUp"/>
+          <include name="deletionOfEmployeeFromEmployeeList" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="updatesGeneralInformationData" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
+          <include name="creationOfEmployee" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.self.tests.AdminTest -->
+      </class> <!-- com.self.tests.PIMTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -13,7 +13,7 @@ import com.self.utils.PropertyUtils;
 
 public class AdminTest extends BaseTest {
 
-	@Test()
+	@Test
 	public void createsJobTitle(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -39,7 +39,7 @@ public class AdminTest extends BaseTest {
 
 	}
 	
-	@Test()
+	@Test
 	public void createsPayGrade(Map<String, String> data) {
 		
 		LoginPage loginpage = new LoginPage();
@@ -72,7 +72,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test()
+	@Test
 	public void createsEmploymentStatus(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -97,7 +97,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test()
+	@Test
 	public void createsJobCategories(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();
@@ -121,7 +121,7 @@ public class AdminTest extends BaseTest {
 		
 	}
 	
-	@Test()
+	@Test
 	public void updatesGeneralInformationData(Map<String, String> data) {
 		LoginPage loginpage = new LoginPage();
 		AdminPage adminPage = new AdminPage();

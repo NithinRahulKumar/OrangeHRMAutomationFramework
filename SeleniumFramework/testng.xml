@@ -9,7 +9,7 @@
   <test thread-count="1" name="Test" parallel="classes">
     <classes>
       <class name="com.self.tests.BaseTest"/>
-	  <class name="com.self.tests.LoginTest"/>
+      <class name="com.self.tests.LoginTest"/>
       <class name="com.self.tests.AdminTest"/>
       <class name="com.self.tests.PIMTest"/>
     </classes>
